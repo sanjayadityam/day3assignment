@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Marks</title>
+<link rel="stylesheet" type="text/css" href="example.css">
+</head>
+<body>
+<h1>Marks using switch statement</h1>
+<form name="form1" action ="#">
+Input Grade type : <input type="text" name="text1" value="A" />
+<br /><br />
+<input type="button" value="Marks check"
+onclick='marksgrade()' />
+</form>
+<script>
+    function marksgrade()
+{
+grade = document.form1.text1.value;
+switch (grade)
+{
+case 'A':
+console.log("Mark is 100 and grade is A");
+break;
+case 'B':
+console.log("Mark is 50 and grade is B ]");
+break;
+default:
+console.log("Wrong grade.........");
+}
+}
+</script>
+<h4>The Result is printed in the Console</h4>
+</body>
+</html>
